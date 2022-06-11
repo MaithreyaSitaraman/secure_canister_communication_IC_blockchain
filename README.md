@@ -31,7 +31,9 @@ Basically, the debug output is telling us that:
 * The Sender has converted the secret message into hex, encrypted it, and sent the encrypted data to the Receiver
 * The Receiver has received the correct encrypted data, and has decrypted it correctly as the original message
 
-To further demonstrate that the message has been received successfully, you can run: dfx canister call receiver view_decrypted_received_message
+To further demonstrate that the message has been received successfully, you can run: 
+
+dfx canister call receiver view_decrypted_received_message
 
 This will return: ("My secret password is FireWater45_1991")
 
