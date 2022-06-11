@@ -15,7 +15,6 @@ import Principal "mo:base/Principal";
 
 actor Sender {
 
-	
 	// This function does the following:
 	// (1) It initiates the Diffie-Hellman key exchange process by choosing a private key, prime, generator
 	// (2) It sends along the Diffie-Hellman prime, generator and private key to the Receiver canister
