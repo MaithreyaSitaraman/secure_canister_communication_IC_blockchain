@@ -9,7 +9,14 @@ Our solution in a nutshell comprises of a sender and a receiver. The sender and 
 
 ## Encryption Modules we built
 
-We use the Diffie-Hellman key exchange together with AES-238, both for which we built original modules in motoko (see /encryption_modules/AES.mo and /encryption_modules/diffiehellman.mo). AES makes use of multiplication in polynomial rings, and we therefore wrote a mathematical module to handle this (see /encryption_modules/polynomial_handling.mo). We are the first to implement AES, Diffie-Hellman, and multiplication in polynomial rings in Motoko.
+We use the Diffie-Hellman key exchange together with AES-238. In order to implement our solution, we needed to build several original encryption modules modules in motoko:
+
+* aes128.mo -- Implementation of the Symmetric encryption algorithm AES128
+* polynomial_handling.mo -- Mathematics module that handles Addition and Multiplication in Polynomial rings k[X]/(f)
+* diffiehellman.mo -- Helper functions to perform the Diffie Hellman Key Exchange
+* Handles conversions between binary, Nat8, hex, unicode etc..
+
+The first three modules above are the first such modules implemented in Motoko. The fourth is a compilation of convenient conversion functions, most of which have not been implemented yet elsewhere. We believe we are making a significant contribution to the IC developer community by making these encryption modules public, since they are the first of their kind that has been implemented.
 
 ## How to run our solution
 
