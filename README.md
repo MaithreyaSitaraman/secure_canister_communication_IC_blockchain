@@ -61,4 +61,4 @@ With centralization, there is always a single point of failure, and a compromise
 * caller screening
 * secure communication
 
-The first is on DFINITY's roadmap, The second can be easily implemented on the IC via Principal IDs. We have provided the first solution to the third.
+The first is on DFINITY's roadmap, The second can be easily implemented on the IC via Principal IDs. We have provided a solution to the third.
