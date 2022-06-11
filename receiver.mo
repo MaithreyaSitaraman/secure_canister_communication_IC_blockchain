@@ -20,7 +20,6 @@ actor Receiver {
 	// Data stored in a hashmap for scalability, i.e Encrypted messages can be received from multiple Principal IDs and the canister can handle all of them
 	let secretkeys_temp_db = HashMap.HashMap<Principal, Text>(1, Principal.equal, Principal.hash); 
 	
-	
 	//Just for demonstration purposes, we store the most recent decrypted message in a variable which we can later read
 	// (to verify the message has been decrypted correctly)	
 	var decrypted_received_message = "";
