@@ -47,7 +47,8 @@ actor Receiver {
 		Debug.print("Receiver: I have independently computed the AES secret key, and it is " # AES_key);
 
 		secretkeys_temp_db.put(msg.caller, AES_key);
-	
+		
+		// now returns the public key back to the sender
 		return DiffieHellman.pow_p(g,b,p);
 	};
 
