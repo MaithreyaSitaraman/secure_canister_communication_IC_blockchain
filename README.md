@@ -12,7 +12,7 @@ Our solution in a nutshell comprises of a sender and a receiver. The sender and 
 We use the Diffie-Hellman key exchange together with AES-238. In order to implement our solution, we needed to build several original encryption modules modules in motoko:
 
 * aes128.mo -- Implementation of the Symmetric encryption algorithm AES128
-* polynomial_handling.mo -- Mathematics module that handles Addition and Multiplication in Polynomial rings k[X]/(f)
+* polynomial_handling.mo -- Mathematics module that handles Addition and Multiplication in Polynomial rings k[X]/(f). This is required for aes implementation.
 * diffiehellman.mo -- Helper functions to perform the Diffie Hellman Key Exchange
 * Handles conversions between binary, Nat8, hex, unicode etc..
 
