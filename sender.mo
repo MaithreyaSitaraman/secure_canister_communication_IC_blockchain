@@ -4,8 +4,6 @@ import AES128 "encryption_modules/aes128";
 import DiffieHellman "encryption_modules/diffiehellman";
 import Converter "encryption_modules/converter";
 
-import Metadata "std_modules/metadata";
-
 import Debug "mo:base/Debug";
 import Stack "mo:base/Stack";
 import List "mo:base/List";
