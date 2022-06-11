@@ -15,10 +15,15 @@ We use the Diffie-Hellman key exchange together with AES-238, both for which we 
 
 Choose your secret message that should be communicated securely. For this example, our message is "My secret password is FireWater45_1991". 
 
-Now, run: dfx canister call sender send_secure_message '("My secret password is FireWater45_1991")'
+Now, run: 
+
+ ```sh
+dfx canister call sender send_secure_message '("My secret password is FireWater45_1991")'
+```
 
 Your debug output will look like this (i.e this will be printed out for demonstration purposes):
 
+ ```sh
 * [Canister rrkah-fqaaa-aaaaa-aaaaq-cai] Receiver: I have independently computed the AES secret key, and it is f882c3e88feeaad705db052c13cce66b
 * [Canister ryjl3-tyaaa-aaaaa-aaaba-cai] Sender: I have independently computed the AES secret key, and it is f882c3e88feeaad705db052c13cce66b
 * [Canister ryjl3-tyaaa-aaaaa-aaaba-cai] Sender: The raw hex data (before encryption) is 4d79207365637265742070617373776f72642069732046697265576174657234355f31393931
@@ -30,10 +35,13 @@ Basically, the debug output is telling us that:
 * both the Receiver and Sender have independently computed the AES secret key, their keys match.
 * The Sender has converted the secret message into hex, encrypted it, and sent the encrypted data to the Receiver
 * The Receiver has received the correct encrypted data, and has decrypted it correctly as the original message
+```
 
 To further demonstrate that the message has been received successfully, you can run: 
 
+ ```sh
 dfx canister call receiver view_decrypted_received_message
+```
 
 This will return: ("My secret password is FireWater45_1991")
 
