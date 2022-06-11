@@ -56,4 +56,9 @@ That is, the Receiver has decrypted the message successfully and stored it in a 
 
 ## Decentralization could, in the future, prove to be a better than Centralization from a security perspective
 
+With centralization, there is always a single point of failure, and a compromised technician or engineer working for the company who hosts and maintains the servers (e.g AWS) could pose a security risk for sensitive data. With decentralization, it is possible to spread your secrets across multiple servers and this could provide heightened security in the sense that the compromise of any single server would not divulge the secrets. Furthermore, data on the blockchain is not stored in tables which a malicious insider could read off/copy, but rather stored in variables, which is considerably more secure. However, for a credible decentralized security solution to take form, three things must be done:
+* hardware protections (think enclaves) 
+* caller screening
+* secure communication
 
+The first is on DFINITY's roadmap, The second can be implemented on the IC via Principal IDs. We have provided the first solution to the third.
