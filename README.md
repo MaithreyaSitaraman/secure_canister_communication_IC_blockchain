@@ -11,7 +11,7 @@ Our solution comprises of a sender and a receiver. The sender and receiver perfo
 
 ## Encryption Modules we built
 
-We use the Diffie-Hellman key exchange together with AES-238. In order to implement our solution, we needed to build several original encryption modules modules in motoko:
+We use the Diffie-Hellman key exchange together with AES-128. In order to implement our solution, we needed to build several original encryption modules modules in motoko:
 
 * aes128.mo -- Implementation of the Symmetric encryption algorithm AES128
 * polynomial_handling.mo -- Mathematics module that handles Addition and Multiplication in Polynomial rings k[X]/(f). This is required for aes implementation.
