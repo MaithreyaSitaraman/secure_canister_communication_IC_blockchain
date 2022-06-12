@@ -14,7 +14,7 @@ We use the Diffie-Hellman key exchange together with AES-238. In order to implem
 * aes128.mo -- Implementation of the Symmetric encryption algorithm AES128
 * polynomial_handling.mo -- Mathematics module that handles Addition and Multiplication in Polynomial rings k[X]/(f). This is required for aes implementation.
 * diffiehellman.mo -- Helper functions to perform the Diffie Hellman Key Exchange
-* Handles conversions between binary, Nat8, hex, unicode etc..
+* converter.mo -- Handles conversions between binary, Nat8, hex, unicode etc..
 
 The first three modules above are the first such modules implemented in Motoko. The fourth is a compilation of convenient conversion functions, most of which have not been implemented yet elsewhere. We believe we are making a significant contribution to the IC developer community by making these encryption modules public, since they are the first of their kind that has been implemented.
 
