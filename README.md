@@ -3,7 +3,7 @@ Submitted to the Supernova Hackathon by Cramium Inc.
 
 ## Summary
 
-Data security is critical for technical business applications, especially when sensitive information like Personally Identifiable Information (PII) is part of the application.  Nearly all industries have PII as part of their business applications and it’s paramount that application developers take data security seriously and build in the necessary measures to mitigate risk. PII includes but not limited to emails, phone numbers, addresses, passwords, device ids, personal characteristics. 
+Data security is critical for technical business applications, especially when sensitive information like Personally Identifiable Information (PII) is part of the application.  Nearly all industries have PII as part of their business applications and it’s paramount that application developers take data security seriously and build in the necessary measures to mitigate risk. PII includes but is not limited to emails, phone numbers, addresses, passwords, device ids, personal characteristics. 
 
 We provide a framework where sensitive messages (such as PII) can be securely passed between canisters, i.e to avoid man-in-the-middle attacks. Our solution can allow secrets to be securely communicated between canisters without being compromised by eavesdroppers. Such a solution does not yet exist as a project deployed on IC, and we therefore believe we are making important contribution towards the futures of the IC, opening the possibilities to a wide range of business applications, which rely on secrets being securely transmitted.
 
