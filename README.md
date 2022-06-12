@@ -30,7 +30,7 @@ Now, run:
 dfx canister call sender send_secure_message '("My secret password is FireWater45_1991")'
 ```
 
-Your debug output will look like this (i.e this will be printed out for demonstration purposes):
+Your debug output will look like this (i.e this will be printed out for demonstration purposes, in the console window where you ran "dfx start"):
 
  ```sh
 [Canister rrkah-fqaaa-aaaaa-aaaaq-cai] Receiver: I have independently computed the AES secret key, and it is f882c3e88feeaad705db052c13cce66b
