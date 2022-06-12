@@ -5,7 +5,7 @@ Submitted to the Supernova Hackathon by Cramium Inc.
 
 We provide a framework where messages can be securely passed between canisters, i.e to avoid man-in-the-middle attacks. Our solution can allow secrets such eavesdroppers. Such a solution does not yet exist as a project deployed on IC, and we therefore believe we are making important contribution towards the futures of the IC, opening up the possibilities to a wide range of business applications, which rely on secrets being securely transmitted.
 
-Our solution in a nutshell comprises of a sender and a receiver. The sender and receiver perform a public key exchange to independently arrive at a secret AES key which cannot be known to an eavesdropper. The sender then sends AES encrypted data to the receiver which is then decrypted on the receiver's side.
+Our solution comprises of a sender and a receiver. The sender and receiver perform a public key exchange to independently arrive at a secret AES key which cannot be known to an eavesdropper. The sender then sends AES encrypted data to the receiver which is then decrypted on the receiver's side.
 
 ## Encryption Modules we built
 
