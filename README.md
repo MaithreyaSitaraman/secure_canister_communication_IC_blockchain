@@ -12,7 +12,7 @@ Our solution comprises of a sender and a receiver. The sender and receiver perfo
 The following gives a visual representation of the technical workflow that our solution implements:
 <div align="center">
   <a>
-    <img src="images/technical_workflow.png" width="600">
+    <img src="images/technical_workflow.png" width="900">
   </a>
 </div>
 
