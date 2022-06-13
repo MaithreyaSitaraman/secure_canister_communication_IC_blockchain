@@ -24,7 +24,7 @@ The first three modules above are the first such modules implemented in Motoko. 
 
 <div align="center">
   <a>
-    <img src="images/technical_workflow.png" width="200">
+    <img src="images/technical_workflow.png" width="600">
   </a>
 </div>
 
