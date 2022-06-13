@@ -20,6 +20,14 @@ We use the Diffie-Hellman key exchange together with AES-128. In order to implem
 
 The first three modules above are the first such modules implemented in Motoko. The fourth is a compilation of convenient conversion functions, most of which have not been implemented yet elsewhere. We believe we are making a significant contribution to the IC developer community by making these encryption modules public, since they are the first of their kind that has been implemented.
 
+## Technical Workflow
+
+<div align="center">
+  <a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
+</div>
+
 ## How to run our solution
 
 Choose your secret message that should be communicated securely. For this example, our message is "My secret password is FireWater45_1991". 
