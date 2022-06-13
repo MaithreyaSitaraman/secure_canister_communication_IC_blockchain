@@ -9,7 +9,7 @@ We provide a framework where sensitive messages (such as PII) can be securely pa
 
 Our solution comprises of a sender and a receiver. The sender and receiver perform a public key exchange to independently arrive at a secret AES key which cannot be known to an eavesdropper. The sender then sends AES encrypted data to the receiver which is then decrypted on the receiver's side.
 
-The following gives a visual representation of the technical workflow that our solution implements:
+The following gives a visual representation of the technical workflow of our solution's implementation:
 <div align="center">
   <a>
     <img src="images/technical_workflow.png" width="800">
