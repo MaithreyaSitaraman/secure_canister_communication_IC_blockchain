@@ -13,6 +13,8 @@ import Random "mo:base/Random";
 
 module {
 
+	// The prime and generator below is considered secure, and is an expert-recommended choice. 
+	// If a prime is such that (p-1)/2 is highly factorizable, then this is a bad choice for a prime since Diffie-Hellman can be broken via CRT
 	let the_rfc_prime : Nat = 32317006071311007300338913926423828248817941241140239112842009751400741706634354222619689417363569347117901737909704191754605873209195028853758986185622153212175412514901774520270235796078236248884246189477587641105928646099411723245426622522193230540919037680524235519125679715870117001058055877651038861847280257976054903569732561526167081339361799541336476559160368317896729073178384589680639671900977202194168647225871031411336429319536193471636533209717077448227988588565369208645296636077250268955505928362751121174096972998068410554359584866583291642136218231078990999448652468262416972035911852507045361090559;
 	let the_default_generator : Nat = 2;
 
@@ -27,7 +29,8 @@ module {
 	public func default_generator() : Nat {
 		return the_default_generator;
 	};
-	
+
+	// Takes powers in logarithmic time
 	public func pow(g : Nat, a : Nat) : Nat {
 		if (a % 2 == 0){
 			let a_2 : Nat = a/2;
@@ -45,6 +48,7 @@ module {
 		return 0;
 	};
 
+	// Takes powers modulo p in logarithmic time
 	public func pow_p(g : Nat, a : Nat, p : Nat) : Nat {
 		
 		if(a == 0){
@@ -67,6 +71,7 @@ module {
 		return 0;
 	};
 
+	// generates large enough random numbers to be used as Diffie-Hellman private keys
 	public func get_random_number (p : Nat) : async Nat {
 		let seed1 = await SubnetManager.raw_rand();
 		let seed2 = await SubnetManager.raw_rand();
@@ -93,6 +98,7 @@ module {
 		return (r1*r2+r1+r2) % p;
 	};
 
+	// helper function, character to Nat
 	func char_to_nat (c : Char) : Nat {
 		if(c == '0'){
 			return 0;
@@ -126,7 +132,8 @@ module {
 		};
 		return 0;	
 	};
-
+	
+	// converts a Diffie-Hellman secret key to an AES key
 	public func DH_to_AES_key(n : Nat) : [Nat8] {
 
 		var key : [var Nat] = [var 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];	
