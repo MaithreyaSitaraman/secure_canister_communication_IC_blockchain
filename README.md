@@ -9,6 +9,12 @@ We provide a framework where sensitive messages (such as PII) can be securely pa
 
 Our solution comprises of a sender and a receiver. The sender and receiver perform a public key exchange to independently arrive at a secret AES key which cannot be known to an eavesdropper. The sender then sends AES encrypted data to the receiver which is then decrypted on the receiver's side.
 
+<div align="center">
+  <a>
+    <img src="images/technical_workflow.png" width="600">
+  </a>
+</div>
+
 ## Encryption Modules we built
 
 We use the Diffie-Hellman key exchange together with AES-128. In order to implement our solution, we needed to build several original encryption modules modules in motoko:
@@ -19,14 +25,6 @@ We use the Diffie-Hellman key exchange together with AES-128. In order to implem
 * converter.mo -- Handles conversions between binary, Nat8, hex, unicode etc..
 
 The first three modules above are the first such modules implemented in Motoko. The fourth is a compilation of convenient conversion functions, most of which have not been implemented yet elsewhere. We believe we are making a significant contribution to the IC developer community by making these encryption modules public, since they are the first of their kind that has been implemented.
-
-## Technical Workflow
-
-<div align="center">
-  <a>
-    <img src="images/technical_workflow.png" width="600">
-  </a>
-</div>
 
 ## How to run our solution
 
