@@ -561,7 +561,8 @@ module {
 		let result : Text = Converter.nat8_to_doublehex(result_arr);
 		return result;
 	};
-	
+
+	// encrypts a hex string, block by block
 	public func encrypt_hex(word : Text, key : Text, padding : Text) : Text {
 		var a : [Nat8] = Converter.hex_to_nat8(word);
 		
@@ -591,7 +592,8 @@ module {
 		
 		return result;
 	};
-
+	
+	// decrypts a hex string, block by block
 	public func decrypt_hex(word : Text, key : Text, padding : Text) : Text {
 		var a : [Nat8] = Converter.hex_to_nat8(word);
 		
