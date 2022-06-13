@@ -23,8 +23,8 @@ The first three modules above are the first such modules implemented in Motoko. 
 ## Technical Workflow
 
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a>
+    <img src="images/technical_workflow.png" width="200">
   </a>
 </div>
 
