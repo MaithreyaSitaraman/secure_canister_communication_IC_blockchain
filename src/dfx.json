@@ -1,0 +1,10 @@
+{
+"canisters": {
+"sender": {
+"type": "motoko", "main": "./sender.mo"
+},
+"receiver": {
+"type": "motoko", "main": "./receiver.mo"
+}
+}
+}
